@@ -1,0 +1,20 @@
+#progressTitle {
+    top: 20px;
+}
+
+#percentage {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+#percentage em {
+    font-style: normal;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(40, 45, 48);
+}
+#percentage p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(116, 121, 140);
+}

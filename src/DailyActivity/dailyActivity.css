@@ -1,0 +1,42 @@
+.recharts-responsive-container {
+    position: relative;
+}
+.recharts-responsive-container h2 {
+    position: absolute;
+    top: 38px;
+    left: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(32, 37, 58);
+}
+
+.tooltip {
+    background-color: red; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 65px;
+    height: 85px;
+    font-size: 14;
+}
+
+#dailyLegend {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(116, 121, 140, 1);
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: end;
+    justify-content: end;
+}
+
+#dailyLegend #kilogramLegend::marker {
+    color: #000;
+}
+
+#dailyLegend #caloriesLegend::marker {
+    color: #f00;
+}

@@ -1,0 +1,14 @@
+.avg-title {
+    color: #fff !important;
+}
+
+.avg-tooltip {
+    background-color: #fff; 
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 14;
+}

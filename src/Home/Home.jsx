@@ -47,7 +47,14 @@ export default function Home() {
         );
     }
     if(loading || user.length === 0) {
-        return 'Loading';
+        return (
+            <div id="loadingDiv">
+                <svg id="loading-svg" viewBox="25 25 50 50">
+                    <circle id="loading-circle" r="20" cy="50" cx="50"></circle>
+                </svg>
+                <p>We are looking for your data...</p>
+            </div>
+        );
     }
 
 

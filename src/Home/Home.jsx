@@ -38,11 +38,16 @@ export default function Home() {
         }
     }, [data]);
 
+    if(error) {
+        return (
+            <div id="errorDiv">
+                <div id="errorMsg">{error}</div>
+                <p>Something went wrong, please try again later.</p>
+            </div>
+        );
+    }
     if(loading || user.length === 0) {
         return 'Loading';
-    }
-    if(error) {
-        return error;
     }
 
 
@@ -166,5 +171,5 @@ export default function Home() {
         </React.Fragment>
 
         );
-}
+    }
 }

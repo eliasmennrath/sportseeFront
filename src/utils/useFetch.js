@@ -7,8 +7,6 @@ import {
     USER_PERFORMANCE
 } from "../data.js";
 
-console.log(process.env);
-
 export default function useFetch(url) {
 
     const [loading, setLoading] = useState(false);

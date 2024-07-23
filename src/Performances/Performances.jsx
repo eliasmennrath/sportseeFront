@@ -35,8 +35,8 @@ export default function Performances({id}) {
 
     return (
         <ResponsiveContainer>
-            <RadarChart data={performance.performances} width={'50%'}>
-                <PolarAngleAxis dataKey='category'  tick={{fill: 'white', fontSize: 12, fontWeight: 500}}/>
+            <RadarChart data={performance.performances} width={'50%'} outerRadius={'50%'}>
+                <PolarAngleAxis dataKey='category'  tick={{fill: 'white', fontSize: 10, fontWeight: 500}}/>
                 <PolarRadiusAxis domain={['auto', 'dataMax + 30']} axisLine={false} tick={false}/>
                 <PolarGrid gridType="polygon" radialLines={false}/>
                 <Radar dataKey='value' fill="#fa0000" fillOpacity={0.6}/>

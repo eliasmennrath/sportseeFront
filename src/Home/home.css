@@ -177,6 +177,7 @@ h1 span {
 }
 
 #stats .card .infos em {
+    font-style: normal;
     font-size: 20px;
     font-weight: 700;
 }

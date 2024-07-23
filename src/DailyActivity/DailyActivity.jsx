@@ -12,7 +12,6 @@ import {
     Legend,
     ResponsiveContainer,
     Label,
-    Text
 } from 'recharts';
 
 
@@ -92,7 +91,7 @@ export default function DailyActivity({id}) {
                 <CartesianGrid strokeDasharray="2" vertical={false}/>
                 <YAxis yAxisId={"leftAxis"} domain={['dataMin - 50', 'dataMax + 10']} hide={true}/>
                 <YAxis yAxisId={"rightAxis"} orientation='right' domain={['dataMin - 2', 'dataMax + 5']} tickCount={3} axisLine={false} tickLine={false} tickMargin={30}/>
-                <XAxis dataKey="day" tickLine={false} scale={"point"} padding={{ left: 11, right: 11 }} tick={ticks}/>
+                <XAxis dataKey="day" tickLine={false} scale={"point"} padding={{ left: 11, right: 11 }} fontSize={14} tick={ticks}/>
                 <Tooltip content={({active, payload}) => 
                     active &&
                     <div className='tooltip' >

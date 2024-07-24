@@ -1,6 +1,8 @@
 import React from "react";
 import { ResponsiveContainer, PieChart, Pie, Legend } from "recharts";
 
+import PropTypes from 'prop-types';
+
 
 import "./goalProgress.css";
 
@@ -43,4 +45,8 @@ export default function GoalProgress({progress}) {
         </ResponsiveContainer>
     );
 
+}
+
+GoalProgress.propTypes = {
+    progress: PropTypes.array
 }

@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { ResponsiveContainer } from "recharts";
 import useFetch from "../utils/useFetch";
 
+import PropTypes from 'prop-types';
+
 import Session from "../models/Session";
 
 import { LineChart, XAxis, YAxis, Line, Tooltip, Rectangle } from "recharts";
@@ -28,7 +30,6 @@ const CustomCursor = (props) => {
 
 
 export default function AverageSession({id}) {
-    
 
     const [session, setSession] = useState([]);
 
@@ -68,3 +69,7 @@ export default function AverageSession({id}) {
     );
 
 }   
+
+AverageSession.propTypes = {
+    id: PropTypes.number
+};

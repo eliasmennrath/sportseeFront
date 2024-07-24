@@ -2,6 +2,8 @@ import { useState,useEffect } from "react";
 import useFetch from "../utils/useFetch.js";
 import Performance from "../models/Performance.js";
 
+import propTypes from 'prop-types';
+
 import { 
     PolarAngleAxis, 
     PolarGrid, 
@@ -43,4 +45,8 @@ export default function Performances({id}) {
             </RadarChart>
         </ResponsiveContainer>
     )
+}
+
+Performances.propTypes = {
+    progress: propTypes.number
 }

@@ -46,6 +46,7 @@ export default function Home() {
             </div>
         );
     }
+
     if(loading || user.length === 0) {
         return (
             <div id="loadingDiv">
@@ -56,7 +57,6 @@ export default function Home() {
             </div>
         );
     }
-
 
     if(user) {
         return (
@@ -176,7 +176,6 @@ export default function Home() {
                 </div> 
             </main>
         </React.Fragment>
-
         );
     }
 }

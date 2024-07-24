@@ -2,6 +2,8 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import useFetch from '../utils/useFetch.js';
 
+import PropTypes from 'prop-types';
+
 import {
     BarChart,
     Bar,
@@ -109,3 +111,8 @@ export default function DailyActivity({id}) {
         </ResponsiveContainer>
     );
 }
+
+
+DailyActivity.propTypes = {
+    id: PropTypes.number
+};

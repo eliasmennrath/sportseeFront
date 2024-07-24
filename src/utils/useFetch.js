@@ -16,6 +16,7 @@ export default function useFetch(url) {
     const request = useCallback(async () => {
         setLoading(true);
 
+        // Set REACT_APP_PROD variable to true in .env to use production data
         if(!process.env.REACT_APP_PROD) {
             const dataType = url.substring(url.lastIndexOf('/') + 1);
             switch (dataType) {

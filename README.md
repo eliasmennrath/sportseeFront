@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Switch between Mocked Data and API
+
+In order to use the mocked data you need to set the environnement varibale REACT_APP_PROD to false in .env file.
+This environnement variable is use in ./src/utils/useFetch.js
